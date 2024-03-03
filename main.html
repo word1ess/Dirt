@@ -1,0 +1,379 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script defer src="js/app.min.js"></script>
+    <title>Главная</title>
+</head>
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="container">
+        <div class="header__row">
+            <a href="index.html" class="header__logo">
+                <img src="img/svgicons/logo.svg" alt="logo">
+            </a>
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <div class="header__menu">
+                <nav class="header__links">
+                    <div class="dropdown-container">
+                        <div class="arrow"></div>
+                        <a href="#" class="header__link dropdown-toggle hover-dropdown">Каталог</a>
+                        <ul class="header-down__menu dropdown-menu ">
+                            <li class="header-down__link">
+                                <a href="#">Продукция</a>
+                                <!-- <ul class="header-down__submenu">
+                                    <li class="header__li">
+                                        <a href="#">Испытания</a>
+                                    </li>
+                                    <li class="header__li">
+                                        <a href="#">Испытания</a>
+                                    </li>
+                                    <li class="header__li">
+                                        <a href="#">Испытания</a>
+                                    </li>
+                                </ul> -->
+                            </li>
+                            <li class="header-down__link">
+                                <a href="#">Оченб длинное название</a>
+                                <!-- <ul class="header-down__submenu">
+                                    <li class="header__li">
+                                        <a href="#">Испытания1</a>
+                                    </li>
+                                    <li class="header__li">
+                                        <a href="#">Испытания1</a>
+                                    </li>
+                                </ul> -->
+                            </li>
+                            <li>
+                                <a href="#">Продукция</a>
+                            </li>
+                            <li>
+                                <a href="#">Продукция</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#">Грунт</a>
+                    <a href="#">Объекты</a>
+                    <a href="#">Доставка</a>
+                    <a href="#">О нас</a>
+                    <a href="#">Цены</a>
+                    <a href="#">Контакты</a>
+                </nav>
+                <div class="header__social">
+                    <a href="tel:+7 (812) 99-555-70" class="header__phone">
+                        <img src="img/svgicons/phone.svg" alt="phone">
+                        <p>+7 (812) 99-555-70</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+            <main class="content index contain-with-footer">
+                <section class="intro main section">
+                    <div class="container">
+                        <div class="intro__row">
+                            <div class="intro__info">
+                                <h1>
+                                    Самовывоз земли
+                                    <br>
+                                    и грунта с площадки
+                                </h1>
+                                <p>Богатый питательными веществами грунт отлично подходит для благоустройства и озеленения территорий, для повышения качества почвы</p>
+                                <div class="btns">
+                                    <button class="btn btn-callback">
+                                        Доставка
+                                    </button>
+                                    <button class="btn btn__bordered">
+                                        Самовывоз
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="intro__img" src="img/intro/index.png" alt="intro">
+                </section>
+                <section class="our-services section">
+                    <div class="container">
+                        <h2 class="white">Виды плодородной земли</h2>
+                        <p class="white">
+                            Самовывоз плодородной земли со складской площадки — хорошая возможность получить нерудный материал без переплаты. Продукция поможет наладить бесперебойную 
+                            работу компаний, занятых в разных сферах, от дорожного строительства до ландшафтного дизайна. Мы предлагаем сотрудничество компаниям
+                        </p>
+                        <div class="our-services__row">
+                            <a href="#" class="our-services__item">
+                                <img class="our-services__bg" src="img/services/1.png" alt="bg">
+                                <p>
+                                    растительный
+                                    грунт
+                                </p>
+                            </a>
+                            <a href="#" class="our-services__item">
+                                <img class="our-services__bg" src="img/services/2.png" alt="bg">
+                                <p>
+                                    сеяный
+                                    грунт
+                                </p>
+                            </a>
+                            <a href="#" class="our-services__item big">
+                                <img class="our-services__bg" src="img/services/3.png" alt="bg">
+                                <p>
+                                    чернозем
+                                </p>
+                            </a>
+                            <a href="#" class="our-services__item big">
+                                <img class="our-services__bg" src="img/services/4.png" alt="bg">
+                                <p>
+                                    плодородный грунт
+                                </p>
+                            </a>
+                            <a href="#" class="our-services__item">
+                                <img class="our-services__bg" src="img/services/5.png" alt="bg">
+                                <p>
+                                    торф
+                                </p>
+                            </a>
+                            <a href="#" class="our-services__item">
+                                <img class="our-services__bg" src="img/services/6.png" alt="bg">
+                                <p>
+                                    торфогрунт
+                                </p>
+                            </a>
+                        </div>
+                        <div class="our-services__adnvantages">
+                            <div class="our-services__adnvantage">
+                                <img src="img/svgicons/sub-intro-1.svg" alt="sub-intro">
+                                <p>Свой склад</p>
+                            </div>
+                            <div class="our-services__adnvantage">
+                                <img src="img/svgicons/sub-intro-2.svg" alt="sub-intro">
+                                <p>Доставка техникой</p>
+                            </div>
+                            <div class="our-services__adnvantage">
+                                <img src="img/svgicons/sub-intro-3.svg" alt="sub-intro">
+                                <p>Самовывоз со склада</p>
+                            </div>
+                            <div class="our-services__adnvantage">
+                                <img src="img/svgicons/sub-intro-4.svg" alt="sub-intro">
+                                <p>Всегда в наличии</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="delivery section">
+                    <div class="container">
+                        <h2>Доставка</h2>
+                        <div class="delivery__row">
+                            <article class="delivery__advantage">
+                                <img src="img/svgicons/advantage-1-green.svg" alt="advantage">
+                                <div class="advantage__info">
+                                    <p>
+                                        Самосвалы 20-25 кубов
+                                    и полуприцепы
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="delivery__advantage">
+                                <img src="img/svgicons/advantage-2-green.svg" alt="advantage">
+                                <div class="advantage__info">
+                                    <p>
+                                        Доставка
+                                        без выходных
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="delivery__advantage">
+                                <img src="img/svgicons/advantage-3-green.svg" alt="advantage">
+                                <div class="advantage__info">
+                                    <p>
+                                        Доставка
+                                        по Спб и области
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <article class="block-with-image article">
+                    <div class="container">
+                        <div class="block-with-image__row">
+                            <div class="block-with-image__img left">
+                                <img src="img/services/12.png" alt="image">
+                            </div>
+                            <div class="block-with-image__info">
+                                <h2>
+                                    Самовывоз земли 
+                                    и грунта с площадки
+                                </h2>
+                                <p>
+                                    Самовывоз плодородной земли со складской площадки — хорошая возможность получить нерудный материал без переплаты. Продукция поможет наладить бесперебойную работу компаний, занятых в разных сферах, от дорожного строительства до ландшафтного дизайна. Мы предлагаем сотрудничество компаниям, занятым в благоустройстве, озеленении, а также частным лицам, предпринимателям. Самовывоз плодородной земли со складской площадки — хорошая возможность получить нерудный материал без переплаты. Продукция поможет наладить бесперебойную работу компаний, занятых в разных сферах, от дорожного строительства до ландшафтного дизайна. Мы предлагаем сотрудничество компаниям, занятым в благоустройстве, озеленении, а также частным лицам, предпринимателям.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <section class="price section">
+                    <div class="container">
+                        <div class="price__row">
+                            <div class="price__price">
+                                <h3>Стоимость грунта на самовывоз</h3>
+                                <table class="price__table">
+                                    <thead>
+                                        <tr>
+                                            <th>ВИД ГРУНТА</th>
+                                            <th>ЦЕНА ЗА КУБ</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Плодородная земля непросеянная</td>
+                                            <td>400 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Плодородная земля непросеянная</td>
+                                            <td>400 ₽</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="price__contacts">
+                                <h3>Контакты</h3>
+                                <div class="contacts__contact">
+                                    <img src="img/svgicons/contacts-1.svg" alt="contacts">
+                                    <div class="contacts__info">
+                                        <p>Адрес:</p>
+                                        <p>Ленинградская область, Выборгский район, поселок Ольшаники</p>
+                                    </div>
+                                </div>
+                                <div class="contacts__contact">
+                                    <img src="img/svgicons/contacts-2.svg" alt="contacts">
+                                    <div class="contacts__info">
+                                        <p>График работы:</p>
+                                        <p>пн-пт с 8:00 до 20:00, сб с 8:00 до 17:00, вс - выходной</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn">КАРТА МЕСТОНАХОЖДЕНИЯ СКЛАДА</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <a href="tel:8 (965) 013-90-96" class="sale section">
+                    <div class="container">
+                        <div class="sale__row">
+                            <img src="img/sale/bg.png" alt="bg" class="sale__bg">
+                            <p>Продажа/отгрузка</p>
+                            <img src="img/svgicons/phone-white.svg" alt="phone-white">
+                            <p>8 (965) 013-90-96</p>
+                        </div>
+                    </div>
+                </a>
+                <section class="pickup block-with-mask text-white">
+                    <div class="block-with-mask__mask mask-2"></div>
+                    <div class="container">
+                        <h2>Земля на самовывоз предлагается в виде</h2>
+                        <div class="pickup__row">
+                            <div class="pickup__item">
+                                <img src="img/svgicons/pickup-1.svg" alt="">
+                                <div class="pickup__info">
+                                    <p>Доставка</p>
+                                    <p>Богатый питательными веществами грунт отлично подходит для благоустройства и озеленения территорий, для повышения качества почвы и урожайности на приусадебном участке или даче. Его получают, снимая верхний слой почвы в экологически чистом районе</p>
+                                </div>
+                            </div>
+                            <div class="pickup__item">
+                                <img src="img/svgicons/pickup-2.svg" alt="">
+                                <div class="pickup__info">
+                                    <p>самовывоз</p>
+                                    <p>Это такой же грунт, но пропущенный через специальную машину — сеялку. Она удаляет из почвы крупные фракции, камни, корни растений, благодаря чему получается материал с однородной структурой и хорошей воздухопроницаемостью.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h2>СЕО</h2>
+                        <p>Самовывоз плодородной земли со складской площадки — хорошая возможность получить нерудный материал без переплаты. Продукция поможет наладить бесперебойную работу компаний, занятых в разных сферах, от дорожного строительства до ландшафтного дизайна. Мы предлагаем сотрудничество компаниям, занятым в благоустройстве, озеленении, а также частным лицам, предпринимателям. Самовывоз плодородной земли со складской площадки — хорошая возможность получить нерудный материал без переплаты. Продукция поможет наладить бесперебойную работу компаний, занятых в разных сферах, от дорожного строительства до ландшафтного дизайна. Мы предлагаем сотрудничество компаниям, занятым в благоустройстве, озеленении, а также частным лицам, предпринимателям.</p>
+                        <p>Мы предлагаем сотрудничество компаниям, занятым в благоустройстве, озеленении, а также частным лицам, предпринимателям. Самовывоз плодородной земли со складской площадки — хорошая возможность получить нерудный материал без переплаты. Продукция поможет наладить бесперебойную работу компаний, занятых в разных сферах, от дорожного строительства до ландшафтного дизайна. Мы предлагаем сотрудничество компаниям, занятым ным лицам, предпринимателям.</p>
+                        <h3>Плодородную землю самовывозом можно забрать с отсрочкой платежа. Сотрудничество станет для вас выгодным благодаря</h3>
+                        <ul class="list-advantage">
+                            <li>
+                                Отсутствию посредников. Вам не нужно переплачивать за их услуги, поставки ведутся напрямую с площадок рядом с местом добычи материала.
+                            </li>
+                            <li>
+                                Возможности наладить регулярные поставки. Сеяный и растительный грунт можно забирать самовывозом, по удобному для вас графику, а можно заказать доставку на объекты вашей компании.
+                            </li>
+                            <li>Высокому качеству нерудных материалов. Плодородный грунт на самовывоз мы предлагаем с гарантией его соответствия стандартам экологичности, содержания питательных веществ, воздухопроницаемости.</li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+    <div class="container">
+        <div class="footer__row">
+            <div class="footer__menu">
+                <div class="footer__logo">
+                    <img src="img/svgicons/logo-white.svg" alt="logo">
+                </div>
+                <nav class="footer__nav">
+                    <a href="#">Грунт</a>
+                    <a href="#">Объекты</a>
+                    <a href="#">Доставка</a>
+                    <a href="#">О нас</a>
+                    <a href="#">Цены</a>
+                    <a href="#">Контакты</a>
+                </nav>
+                <div class="footer__social">
+                    <a href="tel:+7 (812) 99-555-70" class="footer__phone">
+                        <img src="img/svgicons/phone-white.svg" alt="phone">
+                        <p>+7 (812) 99-555-70</p>
+                    </a>
+                </div>
+            </div>
+            <footer class="footer__copy">
+                <p>Copyright © 2010-2024 Freepik Company S.L. All rights reserved.</p>
+                <a href="#">
+                    <p>Разработанно</p>
+                    <img src="img/svgicons/kruw.svg" alt="kruw">
+                </a>
+            </footer>
+        </div>
+    </div>
+</footer>
+<div class="dialogbox dialogbox-callback">
+    <div class="dialogbox__inner">
+        <div class="dialogbox__window">
+            <div class="dialogbox__close"></div>
+            <div class="dialogbox__form">
+                <h2>Обратный звонок</h2>
+                <form action="#">
+                    <input
+                        class="input"
+                        type="text"
+                        name="name"
+                        placeholder="Ваше имя"
+                    >
+                    <input
+                        class="input"
+                        type="tel"
+                        name="phone"
+                        placeholder="Ваш телефон"
+                    >
+                    <button type="submit" class="btn btn-sumbit">Написать нам</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </body>
+</html>

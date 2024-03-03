@@ -1,0 +1,202 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script defer src="js/app.min.js"></script>
+    <title>Контакты</title>
+</head>
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="container">
+        <div class="header__row">
+            <a href="index.html" class="header__logo">
+                <img src="img/svgicons/logo.svg" alt="logo">
+            </a>
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <div class="header__menu">
+                <nav class="header__links">
+                    <div class="dropdown-container">
+                        <div class="arrow"></div>
+                        <a href="#" class="header__link dropdown-toggle hover-dropdown">Каталог</a>
+                        <ul class="header-down__menu dropdown-menu ">
+                            <li class="header-down__link">
+                                <a href="#">Продукция</a>
+                                <!-- <ul class="header-down__submenu">
+                                    <li class="header__li">
+                                        <a href="#">Испытания</a>
+                                    </li>
+                                    <li class="header__li">
+                                        <a href="#">Испытания</a>
+                                    </li>
+                                    <li class="header__li">
+                                        <a href="#">Испытания</a>
+                                    </li>
+                                </ul> -->
+                            </li>
+                            <li class="header-down__link">
+                                <a href="#">Оченб длинное название</a>
+                                <!-- <ul class="header-down__submenu">
+                                    <li class="header__li">
+                                        <a href="#">Испытания1</a>
+                                    </li>
+                                    <li class="header__li">
+                                        <a href="#">Испытания1</a>
+                                    </li>
+                                </ul> -->
+                            </li>
+                            <li>
+                                <a href="#">Продукция</a>
+                            </li>
+                            <li>
+                                <a href="#">Продукция</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#">Грунт</a>
+                    <a href="#">Объекты</a>
+                    <a href="#">Доставка</a>
+                    <a href="#">О нас</a>
+                    <a href="#">Цены</a>
+                    <a href="#">Контакты</a>
+                </nav>
+                <div class="header__social">
+                    <a href="tel:+7 (812) 99-555-70" class="header__phone">
+                        <img src="img/svgicons/phone.svg" alt="phone">
+                        <p>+7 (812) 99-555-70</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+            <main class="content">
+                <article class="contacts article">
+                    <div class="container">
+                        <h1>Контакты</h1>
+                        <div class="contacts__row">
+                            <div class="contacts__info">
+                                <div class="contacts__item">
+                                    <div class="contacts__title">Телефоны</div>
+                                    <a href="tel:8 (965) 013-90-96" class="phone">
+                                        <p class="text-green">8 (965) 013-90-96</p>
+                                    </a>
+                                </div>
+                                <div class="contacts__item">
+                                    <div class="contacts__title">Адрес компании</div>
+                                    <a href="#" class="address">
+                                        <p>
+                                            Ленинградская область, Выборгский
+                                            район, поселок Ольшаники
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="contacts__item">
+                                    <div class="contacts__title">График работы</div>
+                                    <p>
+                                        пн-пт с 8:00 до 20:00, сб с 8:00 
+                                        до 17:00, вс - выходной
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="contacts__map">
+                                <img src="img/map.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <section class="form form-contacts">
+                    <div class="container">
+                        <h2>Написать нам</h2>
+                        <form action="#" class="form__row">
+                            <div class="form__inputs">
+                                <div class="form__inputs-row">
+                                    <input name="name" type="name" placeholder="Имя">
+                                    <input
+                                        class="phone"
+                                        name="phone"
+                                        type="phone"
+                                        placeholder="+7 (xxx) xxx-xx-xx"
+                                    >
+                                    <input name="email" type="email" placeholder="Почта">
+                                    <textarea name="message" placeholder="Ваше сообщение"></textarea>
+                                </div>
+                                <button type="submit" class="btn">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+    <div class="container">
+        <div class="footer__row">
+            <div class="footer__menu">
+                <div class="footer__logo">
+                    <img src="img/svgicons/logo-white.svg" alt="logo">
+                </div>
+                <nav class="footer__nav">
+                    <a href="#">Грунт</a>
+                    <a href="#">Объекты</a>
+                    <a href="#">Доставка</a>
+                    <a href="#">О нас</a>
+                    <a href="#">Цены</a>
+                    <a href="#">Контакты</a>
+                </nav>
+                <div class="footer__social">
+                    <a href="tel:+7 (812) 99-555-70" class="footer__phone">
+                        <img src="img/svgicons/phone-white.svg" alt="phone">
+                        <p>+7 (812) 99-555-70</p>
+                    </a>
+                </div>
+            </div>
+            <footer class="footer__copy">
+                <p>Copyright © 2010-2024 Freepik Company S.L. All rights reserved.</p>
+                <a href="#">
+                    <p>Разработанно</p>
+                    <img src="img/svgicons/kruw.svg" alt="kruw">
+                </a>
+            </footer>
+        </div>
+    </div>
+</footer>
+<div class="dialogbox dialogbox-callback">
+    <div class="dialogbox__inner">
+        <div class="dialogbox__window">
+            <div class="dialogbox__close"></div>
+            <div class="dialogbox__form">
+                <h2>Обратный звонок</h2>
+                <form action="#">
+                    <input
+                        class="input"
+                        type="text"
+                        name="name"
+                        placeholder="Ваше имя"
+                    >
+                    <input
+                        class="input"
+                        type="tel"
+                        name="phone"
+                        placeholder="Ваш телефон"
+                    >
+                    <button type="submit" class="btn btn-sumbit">Написать нам</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </body>
+</html>
