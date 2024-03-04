@@ -237,6 +237,10 @@ h6 {
   font-weight: 700;
   line-height: 19px;
   text-transform: uppercase;
+  transition: all 300ms ease;
+}
+.header__links a:hover {
+  color: #21920e;
 }
 .header__phone {
   display: flex;
@@ -250,6 +254,9 @@ h6 {
   line-height: 29px;
   margin: 0px;
 }
+.header__phone:hover p {
+  color: #21920e;
+}
 
 .dropdown-container {
   position: relative;
@@ -260,6 +267,13 @@ h6 {
 .dropdown-container.dropdown-open .arrow::before,
 .dropdown-container.dropdown-open .arrow::after {
   background: #18650b;
+}
+
+.dropdown-container {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+  align-items: center;
 }
 
 .dropdown-container .arrow,
@@ -295,6 +309,12 @@ h6 {
 .subdropdown-arrow::before {
   rotate: 45deg;
   left: 0px;
+}
+
+.dropdown-container .arrow {
+  position: relative;
+  left: 0px;
+  top: 0px;
 }
 
 .header-down__link a {
@@ -629,6 +649,7 @@ p.white {
   mask-image: url(../img/masks/2.svg);
   -webkit-mask-image: url(../img/masks/2.svg);
   background: center/cover no-repeat url(../img/masks/2.png);
+  height: 100%;
 }
 .block-with-mask__mask.mask-2 + .container {
   padding-top: 300px;
@@ -638,11 +659,12 @@ p.white {
   mask-image: url(../img/masks/3.svg);
   -webkit-mask-image: url(../img/masks/3.svg);
   background: center/cover no-repeat url(../img/masks/3.png);
+  height: 100%;
 }
 .block-with-mask__mask.mask-3 + .container {
   padding-top: 200px;
-  padding-bottom: 100px;
-  margin-bottom: 300px;
+  padding-bottom: 40px;
+  margin-bottom: 150px;
 }
 
 .photogallery {
@@ -821,23 +843,31 @@ p.white {
 .intro {
   position: relative;
   z-index: 10;
-  background: center/cover no-repeat url("../img/intro/bg.png");
+}
+.intro__img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 800px;
+  aspect-ratio: 1/1;
+  z-index: 15;
+  transform: translate(0px, 0px);
 }
 .intro.main .intro__row {
   flex: 0 0 600px;
-}
-.intro.main .intro__img {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  height: 800px;
-  aspect-ratio: auto;
-  transform: translate(0px, 400px);
 }
 .intro.main p {
   color: #000;
   font-size: 22px;
   font-weight: 400;
+}
+.intro.main .intro__bg {
+  position: absolute;
+  width: 100%;
+  height: 180%;
+  top: 0px;
+  left: 0px;
+  object-fit: cover;
 }
 .intro__row {
   display: flex;
@@ -860,13 +890,6 @@ p.white {
   font-weight: 800;
   text-transform: uppercase;
 }
-.intro__img {
-  flex: 1 1 auto;
-  height: 100%;
-  bottom: 0px;
-  right: 0px;
-  z-index: 1;
-}
 
 .our-services {
   mask-image: url(../img/masks/1.svg);
@@ -876,6 +899,8 @@ p.white {
   -webkit-mask-size: cover;
   background: center/cover no-repeat url(../img/masks/1.png);
   padding: 300px 0px 300px;
+  position: relative;
+  z-index: 12;
 }
 .our-services__row {
   display: grid;
@@ -913,6 +938,7 @@ p.white {
   transition: all 300ms ease;
   grid-column: span 1;
   grid-row: span 4;
+  border: 1px solid transparent;
 }
 .our-services__item::after {
   content: "";
@@ -941,7 +967,7 @@ p.white {
   text-transform: uppercase;
 }
 .our-services__item:hover {
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.398), 0 0 15px #0fa;
+  border-color: #fff;
 }
 .our-services__item:hover .our-services__bg {
   filter: blur(0px);
@@ -966,6 +992,23 @@ p.white {
   border: none;
 }
 
+.delivery h2 {
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+.delivery h2::before {
+  content: "1";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #247c15;
+  color: #fff;
+  border-radius: 50%;
+  padding: 5px 15px;
+  font-size: 28px;
+  aspect-ratio: 1/1;
+}
 .delivery__row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -992,6 +1035,27 @@ p.white {
 .delivery__advantage img {
   width: 44px;
   height: 30px;
+}
+.delivery + .block-with-image h2 {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  align-items: center;
+}
+.delivery + .block-with-image h2::before {
+  content: "2";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #247c15;
+  color: #fff;
+  border-radius: 50%;
+  padding: 5px 15px;
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+  font-size: 28px;
+  aspect-ratio: 1/1;
 }
 
 .seo-main {
@@ -1558,6 +1622,9 @@ p.white {
   font-weight: 700;
   line-height: 21px;
   text-transform: uppercase;
+}
+.footer__nav a:hover {
+  opacity: 0.8;
 }
 .footer__title {
   font-size: 25px;
