@@ -6,11 +6,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
-    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
-    <script defer src="js/app.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20240305200243">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240305200243">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20240305200243"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js?_v=20240305200243"></script>
+    <script defer src="js/app.min.js?_v=20240305200243"></script>
     <title>Главная</title>
 </head>
 
@@ -28,8 +28,10 @@
             <div class="header__menu">
                 <nav class="header__links">
                     <div class="dropdown-container">
-                        <div class="arrow"></div>
-                        <a href="#" class="header__link dropdown-toggle hover-dropdown">Каталог</a>
+                        <a href="#" class="header__link dropdown-toggle hover-dropdown">
+                            Каталог
+                            <div class="arrow"></div>
+                        </a>
                         <ul class="header-down__menu dropdown-menu ">
                             <li class="header-down__link">
                                 <a href="#">Продукция</a>
@@ -84,7 +86,7 @@
 
             <main class="content index contain-with-footer">
                 <section class="intro main section">
-                    <img src="img/intro/bg.png" alt="intro-bg" class="intro__bg">
+                    <picture><source srcset="img/intro/bg.webp" type="image/webp"><img src="img/intro/bg.png" alt="intro-bg" class="intro__bg"></picture>
                     <div class="container">
                         <div class="intro__row">
                             <div class="intro__info">
@@ -106,7 +108,7 @@
                         </div>
                     </div>
                 </section>
-                <img class="intro__img" src="img/intro/index.png" alt="intro">
+                <picture><source srcset="img/intro/index.webp" type="image/webp"><img class="intro__img" src="img/intro/index.png" alt="intro"></picture>
                 <section class="our-services section">
                     <div class="container">
                         <h2 class="white">Виды плодородной земли</h2>
@@ -116,39 +118,39 @@
                         </p>
                         <div class="our-services__row">
                             <a href="#" class="our-services__item">
-                                <img class="our-services__bg" src="img/services/1.png" alt="bg">
+                                <picture><source srcset="img/services/1.webp" type="image/webp"><img class="our-services__bg" src="img/services/1.png" alt="bg"></picture>
                                 <p>
                                     растительный
                                     грунт
                                 </p>
                             </a>
                             <a href="#" class="our-services__item">
-                                <img class="our-services__bg" src="img/services/2.png" alt="bg">
+                                <picture><source srcset="img/services/2.webp" type="image/webp"><img class="our-services__bg" src="img/services/2.png" alt="bg"></picture>
                                 <p>
                                     сеяный
                                     грунт
                                 </p>
                             </a>
                             <a href="#" class="our-services__item big">
-                                <img class="our-services__bg" src="img/services/3.png" alt="bg">
+                                <picture><source srcset="img/services/3.webp" type="image/webp"><img class="our-services__bg" src="img/services/3.png" alt="bg"></picture>
                                 <p>
                                     чернозем
                                 </p>
                             </a>
                             <a href="#" class="our-services__item big">
-                                <img class="our-services__bg" src="img/services/4.png" alt="bg">
+                                <picture><source srcset="img/services/4.webp" type="image/webp"><img class="our-services__bg" src="img/services/4.png" alt="bg"></picture>
                                 <p>
                                     плодородный грунт
                                 </p>
                             </a>
                             <a href="#" class="our-services__item">
-                                <img class="our-services__bg" src="img/services/5.png" alt="bg">
+                                <picture><source srcset="img/services/5.webp" type="image/webp"><img class="our-services__bg" src="img/services/5.png" alt="bg"></picture>
                                 <p>
                                     торф
                                 </p>
                             </a>
                             <a href="#" class="our-services__item">
-                                <img class="our-services__bg" src="img/services/6.png" alt="bg">
+                                <picture><source srcset="img/services/6.webp" type="image/webp"><img class="our-services__bg" src="img/services/6.png" alt="bg"></picture>
                                 <p>
                                     торфогрунт
                                 </p>
@@ -212,7 +214,7 @@
                     <div class="container">
                         <div class="block-with-image__row">
                             <div class="block-with-image__img left">
-                                <img src="img/services/12.png" alt="image">
+                                <picture><source srcset="img/services/12.webp" type="image/webp"><img src="img/services/12.png" alt="image"></picture>
                             </div>
                             <div class="block-with-image__info">
                                 <h2>
@@ -275,7 +277,7 @@
                 <a href="tel:8 (965) 013-90-96" class="sale section">
                     <div class="container">
                         <div class="sale__row">
-                            <img src="img/sale/bg.png" alt="bg" class="sale__bg">
+                            <picture><source srcset="img/sale/bg.webp" type="image/webp"><img src="img/sale/bg.png" alt="bg" class="sale__bg"></picture>
                             <p>Продажа/отгрузка</p>
                             <img src="img/svgicons/phone-white.svg" alt="phone-white">
                             <p>8 (965) 013-90-96</p>
