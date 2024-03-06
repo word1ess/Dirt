@@ -326,7 +326,7 @@ h6 {
   top: 0px;
 }
 
-.header-down__link a {
+.header-down__link {
   font-size: 14px;
 }
 
@@ -347,8 +347,8 @@ h6 {
   border-radius: 22px;
   overflow: hidden;
 }
-.header-down__menu li,
-.header-down__submenu li {
+.header-down__menu a,
+.header-down__submenu a {
   justify-content: flex-start;
   color: #fff;
   padding: 30px;
@@ -356,27 +356,25 @@ h6 {
   transition: all 300ms ease;
   text-align: left;
   cursor: pointer;
-}
-.header-down__menu li::before,
-.header-down__submenu li::before {
-  display: none;
-}
-.header-down__menu li:first-child,
-.header-down__submenu li:first-child {
-  border-radius: 22px 22px 0px 0px;
-}
-.header-down__menu li:not(:last-child),
-.header-down__submenu li:not(:last-child) {
-  border-bottom: 1px solid #216f14;
-}
-.header-down__menu li:hover,
-.header-down__submenu li:hover {
-  background: #186b0a;
-}
-.header-down__menu li a,
-.header-down__submenu li a {
   font-size: 14px !important;
   color: #fff;
+}
+.header-down__menu a::before,
+.header-down__submenu a::before {
+  display: none;
+}
+.header-down__menu a:first-child,
+.header-down__submenu a:first-child {
+  border-radius: 22px 22px 0px 0px;
+}
+.header-down__menu a:not(:last-child),
+.header-down__submenu a:not(:last-child) {
+  border-bottom: 1px solid #216f14;
+}
+.header-down__menu a:hover,
+.header-down__submenu a:hover {
+  background: #186b0a;
+  color: #fff !important;
 }
 .header-down__menu.active,
 .header-down__submenu.active {
@@ -391,24 +389,6 @@ h6 {
 }
 .header-down__menu li {
   position: relative;
-}
-
-.header-down__submenu {
-  top: -111px;
-  transform: translate(0px, 111px);
-  left: 268px;
-  position: absolute;
-  gap: 0px;
-}
-.header-down__submenu a {
-  color: #fff !important;
-}
-.header-down__submenu li {
-  margin: 0px;
-  background: #18650b;
-}
-.header-down__submenu li:hover a {
-  color: #1d780e !important;
 }
 
 .dropdown-container {
@@ -1749,6 +1729,11 @@ body {
   position: relative;
 }
 
+@media only screen and (max-width: 1900px) {
+  .block-with-mask__mask.mask-3 {
+    height: 120%;
+  }
+}
 @media only screen and (max-width: 1440px) {
   .intro__img {
     height: 600px;
